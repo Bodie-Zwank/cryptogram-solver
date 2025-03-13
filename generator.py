@@ -36,7 +36,7 @@ def combined_quote(quotes):
     return quote + " - " + author
 
 def generate_cryptogram():
-    quotes = filter_quotes(load_quotes("quotes.json")["quotes"])
+    quotes = filter_quotes(load_quotes("data/quotes.json")["quotes"])
     shuffled = letter_shuffle()
     solution = combined_quote(quotes)
     solution_list = list(solution)
